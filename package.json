@@ -1,0 +1,9 @@
+{
+  "name": "cachecraft",
+  "version": "1.0.0",
+  "main": "src/cache.js",
+  "engines": { "node": ">=21" },
+  "scripts": { "test": "node --test \"test/**/*.test.js\"", "bench": "node bench/stampede.js" },
+  "peerDependencies": { "ioredis": "^5.3.0" },
+  "peerDependenciesMeta": { "ioredis": { "optional": true } }
+}
