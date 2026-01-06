@@ -28,7 +28,7 @@ class LRU {
   set(k, v) {
     this.map.delete(k);
     this.map.set(k, v);
-    if (this.map.size >= this.max) this.map.delete(this.map.keys().next().value);
+    if (this.map.size > this.max) this.map.delete(this.map.keys().next().value);
   }
   delete(k) { this.map.delete(k); }
   clear() { this.map.clear(); }
